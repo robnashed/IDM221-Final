@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<title>sxmniak</title>
+</head>
+<body>
+
+	<div class="header">
+		<div class="headerTitle">
+			sxmniak
+		</div>
+		<div class="headerLinks">
+			<a target="_blank" class="socialMedia soundcloudButton" href="https://soundcloud.com/sxmniak"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+			<a target="_blank" class="socialMedia spotifyButton" href="https://open.spotify.com/artist/0NIcjfmIXKx1cOpF0VSLVr"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+			<a target="_blank" class="socialMedia appleButton" href="https://itunes.apple.com/us/artist/sxmniak/1286455064"><i class="fa fa-apple" aria-hidden="true"></i></a>
+		</div>
+		<a onclick="smoothScroll()" href="#musicTitle" class="downButton">
+			<img class="arrow animated tada" src="img/arrowdown.png" />
+		</a>
+	</div>
+
+	<div class="wrapper">
+		<div id="musicSection" class="music">
+			<div class="musicTitle" id="musicTitle">Music</div>
+				<div class="musicBox" >
+					<div class="row">
+						<div class="col"><div class="album"><a href="#"><img class="cover" src="img/moontalks-cover-min.png"/></a></div></div>
+						<div class="col"><div class="album"><a href="#"><img class="cover" src="img/time-keeps-goin-cover-min.png"/></a></div></div>
+						<div class="col"><div class="album"><a href="#"><img class="cover" src="img/oraclecover-min.png"/></a></div></div>
+					</div>
+					<div class="row">
+						<div class="col"><div class="album"></div></div>
+						<div class="col"><div class="album"></div></div>
+					</div>
+				</div>
+				<!--<div class="bio">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>-->
+				<div class="contact">
+					<div class="contactTitle">Contact</div>
+					<form action="mailto:robertonashed@gmail.com" method="post" enctype="text/plain">
+<input class="textInput" type="text" name="name" placeholder="name"><br>
+<input class="textInput" type="text" name="mail" placeholder="email"><br>
+<input class="textInput" type="text" name="comment" size="50" placeholder="message"><br><br>
+
+<button class="sendButton" type="submit" value="Send">Send</button>
+</form>
+				</div>
+
+		</div>
+		<footer>&copy;Copyright 2017 sxmniak</footer>
+
+	</div>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+function smoothScroll(){
+	$('html, body').animate({
+	       scrollTop: $("#musicTitle").offset().top
+	   }, 1000);
+}
+
+</script>
+</body>
+
+</html>
